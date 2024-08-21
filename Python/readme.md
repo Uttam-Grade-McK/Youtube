@@ -26,17 +26,18 @@ Python provides a set of built-in methods that you can use on dictionaries:
 
 | Method        | Description                                                                                  | Example                                                      |
 |---------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| `clear()`     | Removes all the elements from the dictionary                                                 | `my_dict.clear()` results in `{}`                            |
-| `copy()`      | Returns a copy of the dictionary                                                             | `new_dict = my_dict.copy()` results in a copy `{'a': 1, 'b': 2}` |
-| `fromkeys()`  | Returns a dictionary with the specified keys and value                                       | `dict.fromkeys(['a', 'b'], 0)` results in `{'a': 0, 'b': 0}` |
-| `get()`       | Returns the value of the specified key                                                       | `my_dict.get('a')` results in `1`                            |
-| `items()`     | Returns a list containing a tuple for each key-value pair                                    | `my_dict.items()` results in `[('a', 1), ('b', 2)]`          |
-| `keys()`      | Returns a list containing the dictionary's keys                                              | `my_dict.keys()` results in `dict_keys(['a', 'b'])`          |
-| `pop()`       | Removes the element with the specified key                                                   | `my_dict.pop('a')` results in `1` and `my_dict` becomes `{'b': 2}` |
-| `popitem()`   | Removes the last inserted key-value pair                                                     | `my_dict.popitem()` results in `('b', 2)` and `my_dict` becomes `{'a': 1}` |
-| `setdefault()`| Returns the value of the specified key. If the key does not exist: insert the key, with the specified value | `my_dict.setdefault('c', 3)` results in `{'a': 1, 'b': 2, 'c': 3}` |
-| `update()`    | Updates the dictionary with the specified key-value pairs                                    | `my_dict.update({'c': 3})` results in `{'a': 1, 'b': 2, 'c': 3}` |
-| `values()`    | Returns a list of all the values in the dictionary                                           | `my_dict.values()` results in `dict_values([1, 2])`          |
+| `clear()`     | 🧹 Removes all the elements from the dictionary                                               | `my_dict.clear()` results in `{}`                            |
+| `copy()`      | 📋 Returns a copy of the dictionary                                                           | `new_dict = my_dict.copy()` results in a copy `{'a': 1, 'b': 2}` |
+| `fromkeys()`  | 🔑 Returns a dictionary with the specified keys and value                                     | `dict.fromkeys(['a', 'b'], 0)` results in `{'a': 0, 'b': 0}` |
+| `get()`       | 🔍 Returns the value of the specified key                                                     | `my_dict.get('a')` results in `1`                            |
+| `items()`     | 📦 Returns a list containing a tuple for each key-value pair                                  | `my_dict.items()` results in `[('a', 1), ('b', 2)]`          |
+| `keys()`      | 🗝️ Returns a list containing the dictionary's keys                                            | `my_dict.keys()` results in `dict_keys(['a', 'b'])`          |
+| `pop()`       | 🎈 Removes the element with the specified key                                                 | `my_dict.pop('a')` results in `1` and `my_dict` becomes `{'b': 2}` |
+| `popitem()`   | 🎁 Removes the last inserted key-value pair                                                   | `my_dict.popitem()` results in `('b', 2)` and `my_dict` becomes `{'a': 1}` |
+| `setdefault()`| 🛠️ Returns the value of the specified key. If the key does not exist: insert the key, with the specified value | `my_dict.setdefault('c', 3)` results in `{'a': 1, 'b': 2, 'c': 3}` |
+| `update()`    | 🔄 Updates the dictionary with the specified key-value pairs                                  | `my_dict.update({'c': 3})` results in `{'a': 1, 'b': 2, 'c': 3}` |
+| `values()`    | 💎 Returns a list of all the values in the dictionary                                         | `my_dict.values()` results in `dict_values([1, 2])`          |
+
 
 
 
@@ -47,9 +48,8 @@ Python provides two built-in methods that you can use on tuples:
 
 | Method     | Description                                                                       | Example                                                      |
 |------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------|
-| `count()`  | Returns the number of times a specified value occurs in a tuple                   | `my_tuple.count(2)` results in `1` (if 2 appears once)       |
-| `index()`  | Searches the tuple for a specified value and returns the position of where it was found | `my_tuple.index(3)` results in `2` (index of value 3)         |
-
+| `count()`  | 🔢 Returns the number of times a specified value occurs in a tuple                | `my_tuple.count(2)` results in `1` (if 2 appears once)       |
+| `index()`  | 🔍 Searches the tuple for a specified value and returns the position of where it was found | `my_tuple.index(3)` results in `2` (index of value 3)         |
 
 
 
