@@ -50,3 +50,33 @@ Python provides two built-in methods that you can use on tuples:
 | `count()`  | Returns the number of times a specified value occurs in a tuple                   | `my_tuple.count(2)` results in `1` (if 2 appears once)       |
 | `index()`  | Searches the tuple for a specified value and returns the position of where it was found | `my_tuple.index(3)` results in `2` (index of value 3)         |
 
+
+
+
+# Python Set Built-in Methods
+
+Python provides a set of built-in methods that you can use on sets:
+
+| Method                        | Shortcut | Description                                                                       | Example                                                      |
+|-------------------------------|----------|-----------------------------------------------------------------------------------|--------------------------------------------------------------|
+| `add()`                       | -        | Adds an element to the set                                                        | `my_set.add(4)` results in `{1, 2, 3, 4}`                    |
+| `clear()`                     | -        | Removes all the elements from the set                                             | `my_set.clear()` results in `set()`                          |
+| `copy()`                      | -        | Returns a copy of the set                                                         | `new_set = my_set.copy()` results in `{1, 2, 3}`             |
+| `difference()`                | -        | Returns a set containing the difference between two or more sets                  | `my_set.difference(another_set)` results in `{1}` (if `my_set` is `{1, 2, 3}` and `another_set` is `{2, 3, 4}`) |
+| `difference_update()`         | `-=`     | Removes the items in this set that are also included in another, specified set    | `my_set.difference_update(another_set)` results in `{1}`     |
+| `discard()`                   | -        | Remove the specified item                                                         | `my_set.discard(2)` results in `{1, 3}`                      |
+| `intersection()`              | `&`      | Returns a set, that is the intersection of two other sets                         | `my_set.intersection(another_set)` results in `{2, 3}`       |
+| `intersection_update()`       | `&=`     | Removes the items in this set that are not present in other, specified set(s)     | `my_set.intersection_update(another_set)` results in `{2, 3}`|
+| `isdisjoint()`                | -        | Returns whether two sets have an intersection or not                              | `my_set.isdisjoint(another_set)` results in `False`          |
+| `issubset()`                  | `<=`     | Returns whether another set contains this set or not                              | `my_set.issubset(another_set)` results in `True`             |
+| `<`                           | `<`      | Returns whether all items in this set are present in another, specified set(s)    | `my_set < another_set` results in `True`                     |
+| `issuperset()`                | `>=`     | Returns whether this set contains another set or not                              | `my_set.issuperset(another_set)` results in `False`          |
+| `>`                           | `>`      | Returns whether all items in another, specified set(s) are present in this set    | `my_set > another_set` results in `False`                    |
+| `pop()`                       | -        | Removes an element from the set                                                   | `my_set.pop()` removes and returns a random element          |
+| `remove()`                    | -        | Removes the specified element                                                     | `my_set.remove(2)` results in `{1, 3}`                       |
+| `symmetric_difference()`      | `^`      | Returns a set with the symmetric differences of two sets                          | `my_set.symmetric_difference(another_set)` results in `{1, 4}`|
+| `symmetric_difference_update()`| `^=`     | Inserts the symmetric differences from this set and another                       | `my_set.symmetric_difference_update(another_set)` results in `{1, 4}` |
+| `union()`                     | `|`      | Return a set containing the union of sets                                         | `my_set.union(another_set)` results in `{1, 2, 3, 4}`        |
+| `update()`                    | `|=`     | Update the set with the union of this set and others                              | `my_set.update(another_set)` results in `{1, 2, 3, 4}`       |
+
+
