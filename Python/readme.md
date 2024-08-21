@@ -38,3 +38,15 @@ Python provides a set of built-in methods that you can use on dictionaries:
 | `update()`    | Updates the dictionary with the specified key-value pairs                                    | `my_dict.update({'c': 3})` results in `{'a': 1, 'b': 2, 'c': 3}` |
 | `values()`    | Returns a list of all the values in the dictionary                                           | `my_dict.values()` results in `dict_values([1, 2])`          |
 
+
+
+
+# Python Tuple Built-in Methods
+
+Python provides two built-in methods that you can use on tuples:
+
+| Method     | Description                                                                       | Example                                                      |
+|------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------|
+| `count()`  | Returns the number of times a specified value occurs in a tuple                   | `my_tuple.count(2)` results in `1` (if 2 appears once)       |
+| `index()`  | Searches the tuple for a specified value and returns the position of where it was found | `my_tuple.index(3)` results in `2` (index of value 3)         |
+
